@@ -1,4 +1,4 @@
-public class Test {
+public class Test01 {
     public static void main(String[] args) {
         Client client = new SMSClient("1234567890");
         ITaxService taxService = new StandardTaxCalculationMethod();
