@@ -1,6 +1,14 @@
-public class Rectangle {
+public class Rectangle implements IAreaService, IResizable2D {
     protected int w,h;
-    void setWidth(int w){ this.w = w; }
-    void setHeight(int h){ this.h = h; }
-    int area(){ return w*h; }
+
+    @Override
+    public void resize(int h, int w) {
+        this.w = w; this.h = h;
+    }
+
+    @Override
+    public int area() {
+        return w*h;
+    }
+    
 }
