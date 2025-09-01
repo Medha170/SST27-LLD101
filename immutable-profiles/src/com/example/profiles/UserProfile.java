@@ -3,7 +3,7 @@ package com.example.profiles;
 /**
  * Mutable and confusing. Multiple constructors + setters.
  */
-public class UserProfile {
+public final class UserProfile {
     private final String id;
     private final String email;
     private final String phone;
